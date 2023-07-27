@@ -1,11 +1,3 @@
-### potential additions:
-# add geologic time scale to plots
-# change to hover interface for drawing alterations to time arrays (with hover greyed predicted line, and solid if clicked)
-# change model output to plotly to make it interactive
-# add facility to store a plot (or 5?) in memory and allow viewing of them as overlays
-
-setwd("~/Documents/Coding/GEOCARB")
-
 library(ggplot2)
 library(shiny)
 library(shinyjs)
@@ -1064,6 +1056,13 @@ server <- function(input, output, session){
 }
 
 shinyApp(ui, server)
+
+### potential additions:
+# add geologic time scale to plots
+# change to hover interface for drawing alterations to time arrays (with hover greyed predicted line, and solid if clicked)
+# change model output to plotly to make it interactive
+# add facility to store a plot (or 5?) in memory and allow viewing of them as overlays
+
 
 # geop <- readRDS("/Users/mukappa/Downloads/GEOCARBSULF_App_output.RDS")
 # # geop1 <- readRDS("/Users/mukappa/Downloads/GEOCARBSULF_App_output (1).RDS")
